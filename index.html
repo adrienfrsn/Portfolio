@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Portfolio d'Adrien Fryson, étudiant en informatique passionné par le développement logiciel. Découvrez mes compétences et projets.">
+    <meta name="keywords" content="Adrien Fryson, portfolio, informatique, développement, Java, Python, JavaScript">
+    <title>Portfolio - Adrien Fryson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="#" class="text-2xl font-bold text-gray-800">Adrien</a>
+            <button id="menu-toggle" class="md:hidden text-gray-800 focus:outline-none">
+                <span class="material-icons">menu</span>
+            </button>
+            <nav id="menu" class="hidden md:flex">
+                <ul class="flex space-x-4">
+                    <li><a href="#presentation"
+                            class="text-gray-800 hover:text-blue-600 transition duration-300">Présentation</a></li>
+                    <li><a href="#apropos" class="text-gray-800 hover:text-blue-600 transition duration-300">À
+                            propos</a></li>
+                    <li><a href="#competences"
+                            class="text-gray-800 hover:text-blue-600 transition duration-300">Compétences</a></li>
+                    <li><a href="#projets" class="text-gray-800 hover:text-blue-600 transition duration-300">Projets</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-500 transition duration-300">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://raw.githubusercontent.com/adrienfrsn/Portfolio/refs/heads/main/cv.pdf" download
+                            class="bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition duration-300">Télécharger
+                            CV</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden">
+            <ul class="flex flex-col bg-white shadow-lg">
+                <li><a href="#presentation" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Présentation</a>
+                </li>
+                <li><a href="#apropos" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">À propos</a></li>
+                <li><a href="#competences" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Compétences</a></li>
+                <li><a href="#projets" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Projets</a></li>
+                <li><a href="#contact" class="block py-2 px-4 bg-gray-800 text-white hover:bg-gray-700">Contact</a></li>
+                <li><a href="https://raw.githubusercontent.com/adrienfrsn/Portfolio/refs/heads/main/cv.pdf" download
+                        class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Télécharger CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="presentation" class="relative w-full h-screen bg-cover bg-center bg-fixed"
+        style="background-image: url('img/background.jpg');">
+        <div class="absolute inset-0 bg-black opacity-75"></div>
+        <div class="relative flex flex-col justify-center items-center text-white z-10 h-full">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold mt-24">Adrien FRYSON</h1>
+            <p class="text-2xl md:text-3xl lg:text-4xl mt-4">Étudiant en BUT Informatique à Lille</p>
+            <a href="#apropos" class="mt-10 text-4xl md:text-5xl lg:text-6xl text-white animate-bounce">
+                <span class="material-icons">keyboard_arrow_down</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="apropos" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row">
+            <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                <h2 class="text-3xl font-semibold text-gray-900">Présentation</h2>
+            </div>
+            <div class="w-full md:w-2/3 space-y-6 text-gray-700">
+                <p>
+                    Étudiant en deuxième année de BUT Informatique à Lille, je suis passionné par le développement
+                    logiciel et les nouvelles technologies. Mon parcours académique m'a permis d'acquérir une solide
+                    base en programmation, en algorithmique, ainsi qu'en gestion de bases de données et réseaux, avec
+                    une attention particulière portée à l'ingénierie logicielle.
+                </p>
+                <p>
+                    Curieux et toujours en quête de nouveaux défis, je suis constamment à la recherche d'opportunités
+                    pour approfondir mes compétences et découvrir de nouvelles approches.
+                </p>
+                <p>
+                    Je recherche actuellement un stage de 10 semaines à partir d’avril 2025. Ce stage représente pour
+                    moi une étape clé pour mettre en pratique mes connaissances théoriques, tout en apportant ma
+                    contribution à des projets concrets en entreprise. Mon objectif est de m'immerger pleinement dans un
+                    environnement professionnel stimulant, de collaborer au sein d'une équipe dynamique et d’apprendre
+                    directement des experts du domaine.
+                </p>
+                <p>
+                    L'année prochaine, je souhaite poursuivre mon cursus en apprentissage sur une durée de trois ans à
+                    partir de septembre 2025. L’apprentissage est pour moi le format idéal pour allier théorie et
+                    pratique, me permettant ainsi de développer mes compétences techniques en temps réel tout en gagnant
+                    en expérience professionnelle.
+                </p>
+                <p>
+                    Doté d’un esprit analytique et d'une grande capacité d'adaptation, je suis convaincu de pouvoir
+                    relever les défis que ce milieu en constante évolution présente. Je me spécialise en particulier
+                    dans les langages de programmation tels que Java, Python, et JavaScript, avec une forte appétence
+                    pour le Back-End et la création d’applications robustes et performantes.
+                </p>
+                <p>
+                    Je suis motivé par l'idée de contribuer à des projets innovants qui tirent parti des technologies
+                    actuelles tout en continuant à me former sur les solutions de demain. Si vous cherchez un stagiaire
+                    motivé, rigoureux et passionné par l'informatique, n'hésitez pas à me contacter pour discuter de
+                    collaborations futures.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="competences" class="bg-gray-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-10">Mes compétences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="img/python.png" alt="Python" class="w-24 h-24 mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold">Python</h3>
+                    <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+                        <div class="bg-green-500 h-full transition-all duration-500" style="width: 80%;"></div>
+                    </div>
+
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="img/java.png" alt="Java" class="w-24 h-24 mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold">Java</h3>
+                    <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+                        <div class="bg-green-500 h-full transition-all duration-500" style="width: 80%;"></div>
+                    </div>
+
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="img/javascript.png" alt="JavaScript" class="w-24 h-24 mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold">JavaScript</h3>
+                    <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+                        <div class="bg-green-500 h-full transition-all duration-500" style="width: 50%;"></div>
+                    </div>
+
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="img/postgresql.png" alt="PostgreSQL" class="w-24 h-24 mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold">PostgreSQL</h3>
+                    <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+                        <div class="bg-green-500 h-full transition-all duration-500" style="width: 80%;"></div>
+                    </div>
+
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="img/nodejs.png" alt="NodeJS" class="w-24 h-24 mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold">NodeJS*</h3>
+                    <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+                        <div class="bg-green-500 h-full transition-all duration-500" style="width: 30%;"></div>
+                    </div>
+
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="img/reactjs.png" alt="ReactJS" class="w-24 h-24 mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold">ReactJS*</h3>
+                    <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+                        <div class="bg-green-500 h-full transition-all duration-500" style="width: 50%;"></div>
+                    </div>
+
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="img/scrum.png" alt="Scrum" class="w-24 h-24 mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold">Scrum</h3>
+                    <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+                        <div class="bg-green-500 h-full transition-all duration-500" style="width: 50%;"></div>
+                    </div>
+
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="img/git.png" alt="Git" class="w-24 h-24 mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold">Git</h3>
+                    <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+                        <div class="bg-green-500 h-full transition-all duration-500" style="width: 80%;"></div>
+                    </div>
+
+                </div>
+            </div>
+            <p id="eca" class="mt-4 text-sm text-gray-400">* : En cours d'apprentissage hors études</p>
+        </div>
+    </div>
+
+    <div id="projets" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-10">Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <a href="https://github.com/adrienfrsn/Application-Itineraire" target="_blank">
+                        <img src="img/AppItineraire.png" alt="Application Itinéraire"
+                            class="w-full h-60 object-cover transition-transform transform hover:scale-105 loading="
+                            lazy"">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Application d'itinéraire</h3>
+                        <p class="text-gray-700">Création d'une app</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <a href="https://github.com/adrienfrsn/Legend-Of-War" target="_blank">
+                        <img src="img/LegendOfWar.png" alt="Jeu en Java"
+                            class="w-full h-60 object-cover transition-transform transform hover:scale-105 loading="
+                            lazy"">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Jeu en Java</h3>
+                        <p class="text-gray-700">Création d'un jeu en Java en utilisant la méthodologie agile</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <a href="https://github.com/adrienfrsn/Application-Classification-Data" target="_blank">
+                        <img src="img/AppClassification.png" alt="Application Classification"
+                            class="w-full h-60 object-cover transition-transform transform hover:scale-105 loading="
+                            lazy"">
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Application classification</h3>
+                        <p class="text-gray-700">Création d'une app</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="bg-gray-900 py-20 text-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-10">Contactez-moi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col items-center p-6">
+                    <span class="material-icons text-5xl mb-4">mail</span>
+                    <span class="text-lg font-semibold">E-mail</span>
+                    <a href="mailto:adrien.fryson@outlook.com" class="text-blue-400 hover:underline mt-2">
+                        adrien.fryson@outlook.com
+                    </a>
+                </div>
+                <div class="flex flex-col items-center p-6">
+                    <i class="fa fa-github text-5xl mb-4"></i>
+                    <span class="text-lg font-semibold">GitHub</span>
+                    <a href="https://github.com/adrienfrsn" target="_blank" class="text-blue-400 hover:underline mt-2">
+                        adrienfrsn
+                    </a>
+                </div>
+            </div>
+            <a href="#presentation"
+                class="mt-10 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Retour en
+                haut</a>
+        </div>
+    </div>
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2024 Adrien Fryson. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
