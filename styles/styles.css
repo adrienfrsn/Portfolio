@@ -52,6 +52,17 @@
   --tw-contain-style:  ;
 }
 
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; 
+}
+
+#mobile-menu.show {
+  max-height: 500px;
+}
+
+
 ::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
