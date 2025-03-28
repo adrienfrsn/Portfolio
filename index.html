@@ -13,6 +13,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init();
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -37,7 +52,7 @@
                     </li>
                     <li>
                         <a href="https://raw.githubusercontent.com/adrienfrsn/Portfolio/refs/heads/main/cv.pdf" download
-                            class="bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition duration-300">Télécharger
+                            class="bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg hover:shadow-xl hover:bg-gray-700 transition duration-300">Télécharger
                             CV</a>
                     </li>
                 </ul>
@@ -60,8 +75,8 @@
 
     <div id="presentation" class="relative w-full h-screen bg-cover bg-center bg-fixed"
         style="background-image: url('img/background2.webp');">
-        <div class="absolute inset-0 bg-black opacity-75"></div>
-        <div class="relative flex flex-col justify-center items-center text-white z-10 h-full">
+        <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-90"></div>
+        <div class="relative flex flex-col justify-center items-center text-white z-10 h-full" data-aos="fade-up">
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold mt-24">Adrien FRYSON</h1>
             <p class="text-2xl md:text-3xl lg:text-4xl mt-4">Étudiant en BUT Informatique à Lille</p>
             <a href="#apropos" class="mt-10 text-4xl md:text-5xl lg:text-6xl text-white animate-bounce">
@@ -71,7 +86,7 @@
     </div>
 
 
-    <div id="apropos" class="bg-gray-900 py-20">
+    <div id="apropos" class="bg-gray-900 py-20" data-aos="fade-right">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10">
                 <h2 class="text-4xl font-semibold text-white">Présentation</h2>
@@ -109,7 +124,7 @@
         </div>
     </div>
     
-    <div id="softskills" class="bg-white py-20">
+    <div id="softskills" class="bg-white py-20" data-aos="fade-left">
         <div class="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-semibold text-gray-900 mb-10">Mes Soft Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -133,7 +148,7 @@
         </div>
     </div>
 
-    <div id="competences" class="bg-gray-900 py-20 text-white">
+    <div id="competences" class="bg-gray-900 py-20 text-white" data-aos="fade-up">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-4xl font-semibold mb-10">Mes compétences</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -208,9 +223,9 @@
 
     <div id="projets" class="bg-gray-100 py-20">
         <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-10">Projets</h2>
+            <h2 class="text-4xl font-semibold mb-10" data-aos="fade-up">Projets</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
                     <a href="https://github.com/adrienfrsn/Application-Itineraire" target="_blank">
                         <img src="img/AppItineraire.png" alt="Application Itinéraire"
                             class="w-full h-60 object-cover transition-transform transform hover:scale-105"
@@ -227,7 +242,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
                     <a href="https://github.com/adrienfrsn/Legend-Of-War" target="_blank">
                         <img src="img/LegendOfWar.png" alt="Jeu en Java"
                             class="w-full h-60 object-cover transition-transform transform hover:scale-105"
@@ -246,7 +261,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
                     <a href="https://github.com/adrienfrsn/Application-Classification-Data" target="_blank">
                         <img src="img/AppClassification.png" alt="Application Classification"
                             class="w-full h-60 object-cover transition-transform transform hover:scale-105"
@@ -265,7 +280,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
                     <a href="https://github.com/adrienfrsn/CampusTalk" target="_blank">
                         <img src="img/CampusTalk.png" alt="CampusTalk"
                             class="w-full object-cover transition-transform transform hover:scale-105"
@@ -286,7 +301,7 @@
         </div>
     </div>
 
-    <div id="contact" class="bg-gray-900 py-20 text-white">
+    <div id="contact" class="bg-gray-900 py-20 text-white" data-aos="fade-up">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-4xl font-semibold mb-10">Contactez-moi</h2>
             <div class="flex justify-center mb-6">
